@@ -23,7 +23,7 @@ class _GamePanelSmallState extends State<GamePanelSmall> {
 
 
 
-  double _height = 550;
+  double _height = 480;
   int _index = 0;
   List<int> game_setting =[];
   @override
@@ -104,7 +104,7 @@ class _GamePanelSmallState extends State<GamePanelSmall> {
                                   crossAxisCount: 4, // Number of columns
                                   crossAxisSpacing: 10,
                                 mainAxisSpacing: 10,
-                                childAspectRatio: 1.2,
+                                childAspectRatio: 1.3,
                                 children:  value.game_peices.map((item) {
                                   return Container(
                                       height: 20,
@@ -154,12 +154,12 @@ class _GamePanelSmallState extends State<GamePanelSmall> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        width: 35,
-                        height: 35,
+                        width: 45,
+                        height: 45,
                         child: Image.asset('assets/icon/bomb2.png',fit: BoxFit.fill,),
                       ),
                       SizedBox(height: 10,),
-                      Text("${value.founded_bomb}",style: TextStyle(color: Colors.white,fontSize: 15),),
+                      Text("${value.founded_bomb}",style: TextStyle(color: Colors.white,fontSize: 16),),
                     ],
                   ),
                 ),
@@ -172,12 +172,12 @@ class _GamePanelSmallState extends State<GamePanelSmall> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        width: 35,
-                        height: 35,
+                        width: 45,
+                        height: 45,
                         child: Image.asset('assets/icon/gem.png',fit: BoxFit.fill,),
                       ),
                       SizedBox(height: 10,),
-                      Text("${value.founded_gem}",style: TextStyle(color: Colors.white,fontSize: 15),),
+                      Text("${value.founded_gem}",style: TextStyle(color: Colors.white,fontSize: 16),),
                     ],
                   ),
                 ),

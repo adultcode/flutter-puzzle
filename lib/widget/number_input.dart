@@ -28,8 +28,8 @@ class NumberInput extends StatelessWidget {
             child: TextField(
               controller: textEditingController,
               style: TextStyle(color: Colors.white,fontSize: 17),
-            //  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-            //  keyboardType: TextInputType.number,
+             inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+             keyboardType: TextInputType.number,
               decoration:const  InputDecoration(
                 hintStyle: TextStyle(color: Colors.white,fontSize: 14),
                 hintText: "Enter number",
